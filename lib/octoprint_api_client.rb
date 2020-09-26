@@ -11,7 +11,7 @@ require 'faraday'
 require 'json'
 
 class OctoprintApiClient
-  DEFAULT_HEADERS = {"User-Agent"=>"OctoScrape v0.1",
+  DEFAULT_HEADERS = {"User-Agent"=>"OctoprintApiClient v0.1",
                      'Content-Type' => 'application/json'}
 
   attr_reader :url
@@ -110,11 +110,11 @@ end
 #
 if __FILE__ == $0
   PRINTERS = [
-    { name: "Prusa Blue", url: "http://10.30.0.11" },
+    { name: "Prusa Blue",   url: "http://10.30.0.11" },
     { name: "Prusa Purple", url: "http://10.30.0.12" },
-    { name: "Prusa Red", url: "http://10.30.0.13/" },
+    { name: "Prusa Red",    url: "http://10.30.0.13" },
     { name: "Ender Yellow", url: "http://10.30.0.21" },
-    { name: "Ender Green", url: "http://10.30.0.22" }
+    { name: "Ender Green",  url: "http://10.30.0.22" }
   ]
 
   printers.each do |printer|
