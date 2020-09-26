@@ -5,4 +5,5 @@ gem 'async-websocket', '~>0.8.0'
 gem 'faraday'
 gem 'json'
 gem 'yard'
+gem 'paho-mqtt'
 
