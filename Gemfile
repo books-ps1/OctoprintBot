@@ -6,4 +6,4 @@ gem 'faraday'
 gem 'json'
 gem 'yard'
 gem 'paho-mqtt'
-
+gem 'dotenv'
